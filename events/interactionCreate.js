@@ -6,7 +6,8 @@ export default client => {
 	client.on("interactionCreate", interaction => {
 		if (interaction.isAutocomplete()) auto_complete(interaction)
 		if(!interaction.isApplicationCommand()) return
-		
+
+			const x = interaction.options.getMember('user') || interaction.member 
 			const command = client.commands.get(interaction.commandName)
 		if(!command) return
 
@@ -14,7 +15,7 @@ export default client => {
 		//Permission Control
 		if (command.data.permission && !interaction.member.permissions.has(command.data.permission))return interaction.reply({
 			embeds: [
-			embed(`To use this command \`${command.data.permission}\` You have to have the authority.`, "RED")
+			embed(`🚫 You don't have \`${command.data.permission}\` permissions to use this command!`, "RED")
 			]})
 
 
@@ -22,7 +23,7 @@ export default client => {
 		const cooldown = cooldown_control(command, interaction.member.id)
 		if(cooldown) return interaction.reply({
 			embeds: [
-					embed(`To use this command again \`${cooldown}\` you have to wait a second!`, "RED")
+					embed(`🚫 To use this command again \`${cooldown}\` you have to wait a second!`, "RED")
 			]
 		})
 

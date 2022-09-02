@@ -1,10 +1,8 @@
 import { MessageEmbed } from "discord.js"
-import { ContextMenuCommandBuilder } from "@discordjs/builders"
 import { stripIndents } from "common-tags"
 
 export const data = {
-    name: "User Information", 
-    description: "It gives information about the user.",
+    name: "User Info", 
     category: "Context",
     permission: "SEND_MESSAGES",
     execute(interaction) {
@@ -67,6 +65,7 @@ const roles = member.roles.cache.filter (Rol => Rol.id !== Rol.guild.roles.every
     }
 }
 
-export const slash_data = new ContextMenuCommandBuilder()
-.setName(data.name)
-.setType(2)
+export const slash_data = {
+    name: data.name,
+    type: 2
+}

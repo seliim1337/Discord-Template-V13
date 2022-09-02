@@ -1,10 +1,10 @@
 import { MessageEmbed } from "discord.js"
-import { SlashCommandBuilder } from "@discordjs/builders"
 
 export const data = {
 	name: "help",
     description: "Gives information about the command you want to get information about",
     category: "general",
+    permission: "SEND_MESSAGES",
 	execute(interaction) {
 
         const {embed, commands } = interaction.client
@@ -26,12 +26,15 @@ export const data = {
 	}
 }
 
-export const slash_data = new SlashCommandBuilder()
-.setName(data.name)
-.setDescription(data.description)
-.addStringOption(option => 
-                option.setName("command_name")
-                .setDescription("Type the name of the command you want to get information from")
-                .setRequired(true)
-                .setAutocomplete(true)
-    )
+    export const slash_data = {
+        name: data.name,
+        description: data.description,
+        options: [
+        {
+            name: "command_name",
+            description: "Type the name of the command you want to get information from",
+            type: 3,
+            required: true,
+            autocomplete: true
+        }
+    ]}

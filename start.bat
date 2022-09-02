@@ -1,6 +1,6 @@
 title Legend
 echo off
-color 4
+color 2
 cls
 :a
 node index.js

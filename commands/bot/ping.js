@@ -1,6 +1,4 @@
 import { MessageEmbed } from "discord.js"
-import { SlashCommandBuilder } from "@discordjs/builders"
-
 
 export const data = {
 	name: "ping",
@@ -28,6 +26,7 @@ export const data = {
 	}
 }
 
-export const slash_data = new SlashCommandBuilder()
-.setName(data.name)
-.setDescription(data.description)
+export const slash_data = {
+    name: data.name,
+    description: data.description
+}

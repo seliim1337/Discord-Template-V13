@@ -1,5 +1,4 @@
 import { MessageEmbed } from "discord.js"
-import { SlashCommandBuilder } from "@discordjs/builders"
 import { stripIndents } from "common-tags"
 
 export const data = {
@@ -29,7 +28,7 @@ let emojilerString = ''
 member.user.flags.toArray ().forEach (Flag => {
     emojilerString += badgeEmojis [Flag]
 })
-member.premiumSince ? emojilerString += '<:discord_nitro:1007605608402391061> <a:discord_boost:1007605719278817311>' : ''
+//member.premiumSince ? emojilerString += '<:discord_nitro:1007605608402391061> <a:discord_boost:1007605719278817311>' : ''
 const status = member.presence?.status ? member.presence.status.replace("online", `${emoji("online")}Online`).replace("dnd", `${emoji("dnd")}Do Not Distrub`).replace("idle", `${emoji("idle")}Idle`) : `${emoji("offline1337")}Invisible`;
 const roles = member.roles.cache.filter (Rol => Rol.id !== Rol.guild.roles.everyone.id).map (Rol => Rol).join()     
 
@@ -66,10 +65,14 @@ const roles = member.roles.cache.filter (Rol => Rol.id !== Rol.guild.roles.every
     }
 }
 
-export const slash_data = new SlashCommandBuilder()
-.setName(data.name)
-.setDescription(data.description)
-.addUserOption(option => 
-    option.setName("user")
-    .setDescription("Please tag the user")
-)
+export const slash_data = {
+    name: data.name,
+    description: data.description,
+    options: [
+    {
+        name: "user",
+        description: "Please tag the user",
+        type: 6
+    }
+]
+}
