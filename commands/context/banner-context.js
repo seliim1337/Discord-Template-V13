@@ -6,6 +6,7 @@ export const data = {
     permission: "SEND_MESSAGES",
 
     execute(interaction) {
+        const {emoji} = interaction.client
         const member = interaction.options.getMember('user') || interaction.member 
         const Target = interaction.options._hoistedOptions?.[0]?.member ? interaction.client.users.fetch(interaction.options._hoistedOptions?.[0]?.member.id, {force: true}) : interaction.client.users.fetch(interaction.user.id, {force: true})
         
@@ -28,6 +29,7 @@ export const data = {
             const Embed = new MessageEmbed()
                 .setAuthor({ name: `Banner of ${x.tag}`, iconURL: member.user.displayAvatarURL()})
                 .setColor('#f0f0f0')
+                .setDescription(`${emoji("link")} [Click To Open It in the Browser](${x.bannerURL({dynamic: true, size: 2048})})`)
                 .setImage(x.bannerURL({dynamic: true, size: 2048}))
 
             interaction.reply({
