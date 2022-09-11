@@ -58,7 +58,7 @@ If you encounter any issue, please open an [ISSUE](https://github.com/selim1337/
 
 ## Contributors
 
-Want to contribute and appear here ? Open a [PR](https://github.com/selim1337/Discord-Template-V13/pulls) :)
+Want to contribute and appear here ? Open a [PR](https://github.com/selim1337/Discord-Template-V13/pulls)
 
 
 ## Discord Account
