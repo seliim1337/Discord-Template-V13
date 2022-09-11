@@ -35,7 +35,7 @@ Includes:
 - I make a clean and beautiful boat as much as I can and give it to you. I think it is a simple but very effective bot.
 ```
 ```
-* Use `git clone selim1337/Discord-Template-V13` or download the `.zip` file
+* Use `https://github.com/selim1337/Discord-Template-V13` or download the `.zip` file
 * Do `npm i`
 * Edit the `.env` to include your token
 * Now you can run it with `node index.js`
