@@ -6,20 +6,59 @@
         />
     </a>
 </p>
+
 <p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-# Discord.js v13.6.0 slash komutlu basit hazır alt yapı
-```html
-- Öncelikle dosyaları bilgisayar üzerine indirdikten sonra .env dosyasını kendinize göre şekillendirin.
-- Bot içerisinde context, slash command, cooldown, yetki control bu şekilde dosyaları mevcuttur 
-- Elimden geldiğinince temiz ve güzel bir bot yapıp sizlere veriyorum bence basit ama çok etkili bir bot 
+# Discord Bot Template
+
+An easy-to-use discord bot using [Discord.JS](https://discord.js.org) V13.
+[Wiki](https://github.com/selim1337/Discord-Template-V13/wiki)
+
+Includes:
+- Slash commands
+- User commands
+- Context commands
+- Cooldown control
+- Authorization control
+
+## Requirements
+
+- Node JS 16.6 or higher
+- Scope "applications.commands" when adding the bot
+
+## Install it
 ```
-```html
-- Beğenirseniz yıldızlamayı unutmayın lütfen.
-- Alt yapı bana aittir izinsiz ve habersiz paylaşmak kesinlikle yasak ve suçtur.
+- Firstly download the files to the computer the files to the computer, shape the .env file according to you
+- In the bot, such files are available as context, slash command, cooldown, authorization control.
+- I make a clean and beautiful boat as much as I can and give it to you. I think it is a simple but very effective bot.
 ```
+```
+* Use `git clone selim1337/Discord-Template-V13` or download the `.zip` file
+* Do `npm i`
+* Edit the `.env` to include your token
+* Now you can run it with `node index.js`
+```
+```
+- Please don't forget to star if you like it.
+- The infrastructure belongs to me, it is strictly forbidden and a crime to share without permission and unannounced.
+```
+
+
+## Issues
+
+If you encounter any issue, please open an [ISSUE](https://github.com/selim1337/Discord-Template-V13/issues).
+<br>
+#### Known issues:
+
+- No
+- known
+- issues
+
+## Contributors
+
+Want to contribute and appear here ? Open a [PR](https://github.com/selim1337/Discord-Template-V13/pulls) :)
 
 
 ## Discord Account
@@ -48,3 +87,4 @@
 
 # License
 [<h3>MIT License</h3>](https://github.com/selim1337/discordjs-slash-command-bot-v13/blob/main/LICENSE)
+
