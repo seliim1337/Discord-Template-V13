@@ -72,19 +72,3 @@ Want to contribute and appear here ? Open a [PR](https://github.com/selim1337/Di
         />
     </a>      
 </p>
-
-# Credits
-
-<img src='https://github-readme-stats.vercel.app/api?username=selim1337&count_private=true&include_all_commits=true&show_icons=true&theme=gotham&hide_border=true&line_height=27'/>
-
-- 🐉 **Everything you can imagine is real -**
-
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/selim1337) 
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/selim1337_)
-[![Discord Badge](https://img.shields.io/badge/-Discord-5865F2?style=flat-quare&labelColor=5865F2&logo=discord&logoColor=white&link=link)](https://discord.gg/lynx)
-[![Spotify Badge](https://img.shields.io/badge/-Spotify-1ED760?style=flat-quare&labelColor=1ED760&logo=spotify&logoColor=white&link=link)](https://open.spotify.com/user/tfzyt6wcjdhl8dgt8w5lpmywo?si=5WZHuW77Tp-Pwcxy9q9Bdw&utm_source=copy-link&nd=1)
-[![Glitch Badge](https://img.shields.io/badge/-Glitch-ff77ff?style=flat-quare&labelColor=ff82ff&logo=glitch&logoColor=white&link=link)](https://glitch.com/@selim1337)
-
-# License
-[<h3>MIT License</h3>](https://github.com/selim1337/discordjs-slash-command-bot-v13/blob/main/LICENSE)
-
