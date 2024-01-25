@@ -2,7 +2,6 @@
     <a href="https://selim1337.github.io" target="_blank">
         <img
             src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=int%20main()+{cout+%3C%3C+%271337}"
-            alt="l33t community"
         />
     </a>
 </p>
@@ -14,7 +13,7 @@
 # Discord Bot Template
 
 An easy-to-use discord bot using [Discord.JS](https://discord.js.org) V13.
-[Wiki](https://github.com/selim1337/Discord-Template-V13/wiki)
+[Wiki](https://github.com/seliim1337/Discord-Template-V13/wiki)
 
 Includes:
 - Slash commands
